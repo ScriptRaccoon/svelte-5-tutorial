@@ -1,3 +1,48 @@
+:root {
+	--bg-color: #313;
+	--text-color: #fff;
+	--outline-color: #fff5;
+	--secondary-text-color: #fffa;
+	--inverted-text-color: #000;
+	--button-color: #3f8e17;
+	--input-color: #211;
+}
+
 * {
 	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	line-height: 1.4;
+}
+
+p {
+	margin-block: 1rem;
+}
+
+input[type='text'],
+button {
+	font: inherit;
+	border: none;
+	background: none;
+	outline: none;
+	color: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+button:focus-visible {
+	outline: 2px solid var(--text-color);
+}
+
+input:focus-visible {
+	outline: 1px solid var(--text-color);
 }
